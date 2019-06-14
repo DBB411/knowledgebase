@@ -9,7 +9,7 @@
           ^
           | `git add`
           |
-  Working Directory        
+    Working Directory        
 
 
 ### `gitk`
