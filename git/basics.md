@@ -18,4 +18,4 @@
 
 
 
-- git contain snapshots of commits not the changeset/delta (create SHA based on UTC time stamp, uaser_name, commit message, changes,....)
+- git store snapshots of commits not the changeset/delta (create SHA based on UTC time stamp, uaser_name, commit message, changes,....)
