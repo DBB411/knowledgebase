@@ -3,7 +3,8 @@
 3. Install _bundle_ gem by: `gem install bundle`
 4. Install all required _gems_ for project by: `bundle install` (required gem's list gets from _gemfile_)
 5. _Step 4_ did not include _graphviz_, to  do that: `gem install graphviz`
-6. Backup and Restore Production database :
+6. To access Production database, add your ssh key to prduction server 
+7. Backup and Restore Production database :
   - *SSH to teachmore.in and take a backup of the database*
 ```
 $ ssh deployer@teachmore.in
@@ -25,7 +26,7 @@ $ psql -U teachmoredbadmin -d teachmore_dev < teachmore-db-backup-24-Nov-2018.pg
 $ rails c
 :001:0> Device.delete_all
 ```
-7. install **_pgsql_** 
+8. install **_pgsql_** 
   - `$ sudo apt install postgresql postgresql-contrib` to install PostgreSQL
   - The installation procedure created a user account called postgres that is associated with the default Postgres role. In order to use Postgres, you can log into that account.
   - Switch over to the postgres account on your server by typing: `$ sudo -i -u postgres` 
@@ -37,4 +38,4 @@ $ rails c
     Enter name of role to add: user_name
 	Shall the new role be a superuser? (y/n) y
 	```
-8. Setup _ pgAdmin lll _ to disply database
+9. Setup _ pgAdmin lll _ to disply database
